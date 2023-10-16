@@ -1,17 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View, Pressable } from 'react-native';
+import Icon from 'react-native-ico-material-design';
 
-import ImageViewer from './components/ImageViewer';
-
-const PlaceholderImage = require('./assets/images/background-image.jpg');
+var iconHeight = 26;
+var iconWidth = 26;
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.imageContainer}>
-        <ImageViewer placeholderImageSource={PlaceholderImage} />
-      </View>
+      <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
